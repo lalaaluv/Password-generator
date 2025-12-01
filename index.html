@@ -67,7 +67,16 @@
     .row-buttons{display:flex;gap:8px}
     .options{display:flex;flex-direction:column;gap:8px}
 
-    @media (max-width:640px){.controls{grid-template-columns:1fr}.row{flex-direction:column;align-items:stretch}.row-buttons{flex-wrap:wrap}}
+    @media (max-width:640px){
+  body{padding:12px;}
+  .container{padding:16px;width:100%;}
+  h1{font-size:18px}
+  .lead{font-size:12px}
+  .controls{grid-template-columns:1fr}
+  .row{flex-direction:column;align-items:stretch}
+  .row-buttons{flex-wrap:wrap}
+  .output{font-size:16px;padding:10px}
+}.row{flex-direction:column;align-items:stretch}.row-buttons{flex-wrap:wrap}}
   </style>
 </head>
 <body>
@@ -75,7 +84,10 @@
     <header>
       <div>
         <h1>Password Generator</h1>
-        <p class="lead">Generator kata sandi cepat & aman</p>
+        <p class="lead">Generator kata sandi cepat & aman — tema dark • tombol kuning</p>
+      </div>
+      <div style="text-align:right;min-width:160px">
+        <small class="small">Generated with ♥ by <strong>lalaaluv</strong></small>
       </div>
     </header>
 
@@ -137,7 +149,7 @@
     </div>
 
     <footer>
-      <div>© 2025 lalaaluv</div>
+      <div>Hak Cipta • lalaaluv</div>
     </footer>
   </div>
 
